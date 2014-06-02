@@ -4,6 +4,13 @@
 class Security_Sniffs_Drupal7_XSSHTMLConstructSniff implements PHP_CodeSniffer_Sniff {
 	// TODO maybe this should be a generic sniff?
 
+  /**
+   * Framework or CMS used. Must be a class under Security_Sniffs.
+   *
+   * @var String
+   */
+  public $CmsFramework = NULL;
+
 	/**
 	* Returns the token types that this sniff is interested in.
 	*
